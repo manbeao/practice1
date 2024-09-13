@@ -15,4 +15,8 @@ public class Animal {
     public void leash(String dog, String leash){
         System.out.println("강아지들에게 목줄을 채웁니다");
     }
+
+    public void start(String dog){
+        System.out.println();
+    }
 }

@@ -61,22 +61,22 @@ public class Application {
         /*강아지 1은 안겨서 집에 간다 / 강아지 2는 걸어서 집에 간다*/
 
         Scanner sc = new Scanner(System.in);
+        System.out.println("=========강아지 산책 시키기=========");
+        System.out.println();
+        System.out.print("첫번째 강아지의 이름을 입력하세요 : ");
+        String fristDog = sc.next();
+        System.out.print("두번째 강아지의 이름을 입력하세요 : ");
+        String secondDog = sc.next();
+        Animal animal = new Animal();
+        System.out.println();
+        dog1 dog1= new dog1();
+        dog1.stay(fristDog);
+        dog2 dog2 = new dog2();
+        dog2.stay(secondDog);
+        //산책 기대
         while (true){
         System.out.println();
             System.out.println("=========강아지 산책 시키기=========");
-            System.out.println();
-            System.out.print("첫번째 강아지의 이름을 입력하세요 : ");
-            String fristDog = sc.next();
-            System.out.print("두번째 강아지의 이름을 입력하세요 : ");
-            String secondDog = sc.next();
-            Animal animal = new Animal();
-            System.out.println();
-
-            dog1 dog1= new dog1();
-            dog1.stay(fristDog);
-            dog2 dog2 = new dog2();
-            dog2.stay(secondDog);
-            //산책 기대
             System.out.println();
             System.out.println("         1. 간식주기");
             System.out.println("         2. 목줄 채우기");
@@ -102,6 +102,17 @@ public class Application {
 
                 case 2: System.out.println("=========산책 전에는 목줄을 채워야 합니다=========");
                     System.out.println();
+                    System.out.print(fristDog + "에게 채울 목줄의 색을 입력하세요 : ");
+                    String leash1 = sc.next();
+                    dog1.leash(fristDog,leash1);
+                    System.out.print(secondDog + "에게 채울 목줄의 색을 입력하세요 : ");
+                    String leash2 = sc.next();
+                    dog2.leash(secondDog,leash2);
+                    break;
+
+                case 3: System.out.println("=========산책을 하러 출발합니다=========");
+                    System.out.println();
+
             }
 
 

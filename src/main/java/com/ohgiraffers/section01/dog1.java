@@ -13,6 +13,6 @@ public class dog1 extends Animal{
 
     @Override
     public void leash(String dog, String leash){
-        System.out.println(dog + " 은(는)" + leash+"색 목줄을 찹니다");
+        System.out.println(dog + "에게 " + leash+"색 목줄을 채웠습니다");
     }
 }
