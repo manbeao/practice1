@@ -122,6 +122,14 @@ public class Application {
                         dog2.shake(secondDog);
                         break;
 
+                case 5:
+                    System.out.println("=========산책을 멈춥니다=========");
+                    dog1.stop(fristDog);
+                    dog2.stop(secondDog);
+                    break;
+
+                    case 6:
+                        System.out.println("=========산책을 마치고 집으로 돌아갑니다=========");
             }
 
 

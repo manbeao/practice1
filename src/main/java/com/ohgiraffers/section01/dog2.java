@@ -24,4 +24,9 @@ public class dog2 extends Animal {
     public void shake(String dog){
         System.out.println(dog + "(은)는 꼬리를 세차게 흔듭니다");
     }
+
+    @Override
+    public void stop(String dog){
+        System.out.println(dog+ "(은)는 빨리 가자고 목줄을 잡아당깁니다");
+    }
 }

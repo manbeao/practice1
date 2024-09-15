@@ -23,5 +23,12 @@ public class Animal {
         System.out.println("강아지들은 신나게 걸어갑니다");
     }
 
+    public void stop(String dog){
+        System.out.println("강아지들은 멈춰서 기다립니다");
+    }
+
+    public void go(String dog){
+        System.out.println("강아지는 ");
+    }
 
 }
