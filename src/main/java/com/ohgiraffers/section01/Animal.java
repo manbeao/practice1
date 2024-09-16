@@ -28,7 +28,7 @@ public class Animal {
     }
 
     public void go(String dog){
-        System.out.println("강아지는 ");
+        System.out.println("강아지는 다음 산책을 기약하며 집으로 돌아갑니다");
     }
 
 }

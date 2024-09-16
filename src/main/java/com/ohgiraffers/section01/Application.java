@@ -130,6 +130,8 @@ public class Application {
 
                     case 6:
                         System.out.println("=========산책을 마치고 집으로 돌아갑니다=========");
+                        dog1.go(fristDog);
+                        dog2.go(secondDog);
             }
 
 
