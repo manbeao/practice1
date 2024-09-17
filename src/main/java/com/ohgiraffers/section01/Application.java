@@ -85,12 +85,14 @@ public class Application {
             System.out.println("         5. 산책 멈추기");
             System.out.println("         6. 집에 가기 ");
             System.out.println("         7. 프로그램 종료하기 ");
+            System.out.println("         8. 다시 시작하기 ");
             System.out.println();
             System.out.print("번호를 입력하세요 : ");
             int num = sc.nextInt();
 
             switch (num){
-                case 1:  System.out.println("=========산책 전에는 간식을 주어야 합니다=========");
+                case 1:
+                    System.out.println("=========산책 전에는 간식을 주어야 합니다=========");
                     System.out.println();
                     System.out.print(fristDog +"에게 줄 간식을 입력하세요 : ");
                     String food1 = sc.next();
@@ -132,6 +134,20 @@ public class Application {
                         System.out.println("=========산책을 마치고 집으로 돌아갑니다=========");
                         dog1.go(fristDog);
                         dog2.go(secondDog);
+                        break;
+
+                        case 7:
+                            System.out.println("=========프로그램을 종료합니다=========");
+                            break;
+
+                            case 8:
+                                System.out.println("=========프로그램을 다시 시작합니다=========");
+                                break;
+
+                default:
+                    System.out.println("잘못된 번호를 입력하셨습니다");
+                    break;
+
             }
 
 
@@ -141,4 +157,9 @@ if(num==7){
 }
     }
     }
+
+    public void nm1(){
+
+    }
+
 }
