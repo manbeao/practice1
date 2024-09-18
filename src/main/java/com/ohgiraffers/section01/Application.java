@@ -161,11 +161,13 @@ if(num==7){
     break;
 }
 
-
-        if (num==8){
+if (num==8){
             continue;
         }
-    }
+
+
+        
+}
 }
     public void nm1(){
 
