@@ -60,21 +60,24 @@ public class Application {
         //6. 강아지는 집에 간다
         /*강아지 1은 안겨서 집에 간다 / 강아지 2는 걸어서 집에 간다*/
 
-        Scanner sc = new Scanner(System.in);
-        System.out.println("=========강아지 산책 시키기=========");
-        System.out.println();
-        System.out.print("첫번째 강아지의 이름을 입력하세요 : ");
-        String fristDog = sc.next();
-        System.out.print("두번째 강아지의 이름을 입력하세요 : ");
-        String secondDog = sc.next();
-        Animal animal = new Animal();
-        System.out.println();
-        dog1 dog1= new dog1();
-        dog1.stay(fristDog);
-        dog2 dog2 = new dog2();
-        dog2.stay(secondDog);
+
         //산책 기대
         while (true){
+            Scanner sc = new Scanner(System.in);
+            System.out.println("=========강아지 산책 시키기=========");
+            System.out.println();
+            System.out.print("첫번째 강아지의 이름을 입력하세요 : ");
+            String fristDog = sc.next();
+            System.out.print("두번째 강아지의 이름을 입력하세요 : ");
+            String secondDog = sc.next();
+            Animal animal = new Animal();
+            System.out.println();
+            dog1 dog1= new dog1();
+            dog1.stay(fristDog);
+            dog2 dog2 = new dog2();
+            dog2.stay(secondDog);
+
+
         System.out.println();
             System.out.println("=========강아지 산책 시키기=========");
             System.out.println();
@@ -85,7 +88,7 @@ public class Application {
             System.out.println("         5. 산책 멈추기");
             System.out.println("         6. 집에 가기 ");
             System.out.println("         7. 프로그램 종료하기 ");
-            System.out.println("         8. 다시 시작하기 ");
+            System.out.println("         8. 프로그램 다시 시작하기 ");
             System.out.println();
             System.out.print("번호를 입력하세요 : ");
             int num = sc.nextInt();
@@ -144,6 +147,8 @@ public class Application {
                                 System.out.println("=========프로그램을 다시 시작합니다=========");
                                 break;
 
+
+
                 default:
                     System.out.println("잘못된 번호를 입력하셨습니다");
                     break;
@@ -155,9 +160,14 @@ public class Application {
 if(num==7){
     break;
 }
-    }
-    }
 
+
+        if (num==8){
+
+            continue;
+        }
+    }
+}
     public void nm1(){
 
     }
