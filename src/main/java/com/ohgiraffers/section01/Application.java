@@ -163,7 +163,6 @@ if(num==7){
 
 
         if (num==8){
-
             continue;
         }
     }
