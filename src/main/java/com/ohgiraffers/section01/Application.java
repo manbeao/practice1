@@ -72,9 +72,9 @@ public class Application {
             String secondDog = sc.next();
             Animal animal = new Animal();
             System.out.println();
-            dog1 dog1= new dog1();
-            dog1.stay(fristDog);
-            dog2 dog2 = new dog2();
+            Dog Dog = new Dog();
+            Dog.stay(fristDog);
+            Dog2 dog2 = new Dog2();
             dog2.stay(secondDog);
 
 
@@ -99,17 +99,17 @@ public class Application {
                     System.out.println();
                     System.out.print(fristDog +"에게 줄 간식을 입력하세요 : ");
                     String food1 = sc.next();
-                    dog1.eat(fristDog,food1);
+                    Dog.eat(fristDog,food1);
                     System.out.print(secondDog +"에게 줄 간식을 입력하세요 : ");
                     String food2 = sc.next();
-                    dog1.eat(secondDog,food2);
+                    Dog.eat(secondDog,food2);
                     break;
 
                 case 2: System.out.println("=========산책 전에는 목줄을 채워야 합니다=========");
                     System.out.println();
                     System.out.print(fristDog + "에게 채울 목줄의 색을 입력하세요 : ");
                     String leash1 = sc.next();
-                    dog1.leash(fristDog,leash1);
+                    Dog.leash(fristDog,leash1);
                     System.out.print(secondDog + "에게 채울 목줄의 색을 입력하세요 : ");
                     String leash2 = sc.next();
                     dog2.leash(secondDog,leash2);
@@ -117,25 +117,25 @@ public class Application {
 
                 case 3: System.out.println("=========산책을 하러 출발합니다=========");
                     System.out.println();
-                    dog1.start(fristDog);
+                    Dog.start(fristDog);
                     dog2.start(secondDog);
                     break;
 
                     case 4:
                         System.out.println("=========강아지들은 산책을 즐깁나다=========");
-                        dog1.small(fristDog);
+                        Dog.small(fristDog);
                         dog2.shake(secondDog);
                         break;
 
                 case 5:
                     System.out.println("=========산책을 멈춥니다=========");
-                    dog1.stop(fristDog);
+                    Dog.stop(fristDog);
                     dog2.stop(secondDog);
                     break;
 
                     case 6:
                         System.out.println("=========산책을 마치고 집으로 돌아갑니다=========");
-                        dog1.go(fristDog);
+                        Dog.go(fristDog);
                         dog2.go(secondDog);
                         break;
 

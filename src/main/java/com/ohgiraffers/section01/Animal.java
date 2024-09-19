@@ -33,7 +33,7 @@ public class Animal {
         System.out.println("강아지는 다음 산책을 기약하며 집으로 돌아갑니다");
     }
 
-    public void True(){
+    public void ture(){
         Scanner sc = new Scanner(System.in);
         System.out.println("=========강아지 산책 시키기=========");
         System.out.println();
@@ -43,9 +43,9 @@ public class Animal {
         String secondDog = sc.next();
         Animal animal = new Animal();
         System.out.println();
-        dog1 dog1= new dog1();
-        dog1.stay(fristDog);
-        dog2 dog2 = new dog2();
+        Dog Dog = new Dog();
+        Dog.stay(fristDog);
+        Dog2 dog2 = new Dog2();
         dog2.stay(secondDog);
     }
 
