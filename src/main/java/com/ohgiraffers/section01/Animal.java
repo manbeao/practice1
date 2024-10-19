@@ -22,7 +22,7 @@ public class Animal {
 
     public void start(String dog){
 
-        System.out.println("강아지들은 신나게 걸어갑니다");
+        System.out.println("강아지들은 신나게 뛰어갑니다");
     }
 
     public void stop(String dog){
